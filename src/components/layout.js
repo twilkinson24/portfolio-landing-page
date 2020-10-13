@@ -20,12 +20,19 @@ const Layout = ({ children }) => {
           title
         }
       }
+      siteLogo: file(relativePath: { eq: "logo-orange-trans-bg.png" }) {
+        childImageSharp {
+          fixed(width: 400) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} logoImg={data.siteLogo} />
       <div
         style={{
           margin: `0 auto`,
