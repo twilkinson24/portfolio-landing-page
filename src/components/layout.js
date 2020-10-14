@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       }
       siteLogo: file(relativePath: { eq: "logo-orange-trans-bg.png" }) {
         childImageSharp {
-          fixed(width: 400) {
+          fixed(width: 125) {
             ...GatsbyImageSharpFixed
           }
         }
