@@ -5,13 +5,12 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import AboutMe from "../components/about-me"
+// import AboutMe from "../components/about-me"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <AboutMe />
-    
+    <p>Hi</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

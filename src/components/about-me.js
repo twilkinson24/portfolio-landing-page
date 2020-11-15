@@ -65,7 +65,7 @@ const AboutMe = () => {
                     </div>
                     <div className="w-full md:w-5/12">
                         <div className="about-me-img">
-                            <Img fixed={headshotImgSources} alt="aylor Wilkinson - Gatsby and WordPress Developer" />
+                            {/* <Img fixed={headshotImgSources} alt="aylor Wilkinson - Gatsby and WordPress Developer" /> */}
                         </div>
                     </div>
                 </div>
