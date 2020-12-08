@@ -2,11 +2,13 @@ import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
-import MainNav from "./main-nav"
+import MainNav from "../main-nav"
+
+import HeroBGImage from './hero-bg-image'
 
 
 
-function Header({ siteTitle, logoImg }) {
+function HomepageHeader({ siteTitle, logoImg }) {
 
     const logoSources = [
       logoImg.childImageSharp.fixed,
@@ -30,18 +32,19 @@ function Header({ siteTitle, logoImg }) {
             <MainNav />
           </div>
         </div>
+        <HeroBGImage />
       </header>
   );
 }
 
 
 
-// Header.propTypes = {
+// HomepageHeader.propTypes = {
 //   siteTitle: PropTypes.string,
 // }
 
-// Header.defaultProps = {
+// HomepageHeader.defaultProps = {
 //   siteTitle: ``,
 // }
 
-export default Header
+export default HomepageHeader

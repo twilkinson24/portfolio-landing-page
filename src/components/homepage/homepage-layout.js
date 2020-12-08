@@ -9,12 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-// import HomepageHeader from './homepage-header'
+import HomepageHeader from "./homepage-header"
 
-const Layout = ({ children }) => {
+const HomepageLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQueryHomepage {
+    query SiteTitleQuery {
       site {
         siteMetadata {
           title
@@ -32,7 +31,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} logoImg={data.siteLogo} />
+      <HomepageHeader siteTitle={data.site.siteMetadata?.title || `Title`} logoImg={data.siteLogo} />
       <div
         style={{
           margin: `0 auto`,
@@ -53,8 +52,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+HomepageLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default HomepageLayout

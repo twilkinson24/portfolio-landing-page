@@ -8,15 +8,15 @@ function MainNav() {
 
     return (
       <nav>
-          <ul className="flex">
+          <ul className="flex items-center h-full m-0">
               <li>
-                  <Link to="#">Services</Link>
+                  <Link to="#" className="uppercase mx-3">Services</Link>
               </li>
               <li>
-                  <Link to="#">About</Link>
+                  <Link to="#" className="uppercase mx-3">About</Link>
               </li>
               <li>
-                  <Link to="#">Contact</Link>
+                  <Link to="#" className="uppercase ml-3">Say Hi</Link>
               </li>
           </ul>
       </nav>
